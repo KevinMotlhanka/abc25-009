@@ -1,0 +1,11 @@
+navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
