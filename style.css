@@ -29,3 +29,118 @@ body {
     margin-left: auto;
     margin-right: auto;
  }
+ /*style for contact us page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #fdf8f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #4b2e2e;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Logo */
+.logo a {
+  text-decoration: none;
+  color: #f8d7da;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+  color: #f8d7da;
+  border-bottom: 2px solid #f8d7da;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.contact-us {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4b2e2e;
+  font-size: 28px;
+}
+
+/* Paragraphs */
+.contact p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Lists */
+.contact ul {
+  list-style: none;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact ul li {
+  margin: 8px 0;
+}
+
+/* Links */
+.contact a {
+  color: #b76e79;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.foot {
+  background-color: #4b2e2e;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.in-foot {
+  font-size: 14px;
+}
+   
