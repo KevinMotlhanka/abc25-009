@@ -1,4 +1,10 @@
-navbar {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul{
     background-color: #333;
     overflow: hidden;
 }
@@ -9,3 +15,17 @@ navbar {
     padding: 10px 15px;
     display: block;
 }
+.navbar ul a:hover{
+    background-color: #555;
+}
+.navbar ul li{
+    float: left;
+}
+ nav{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
