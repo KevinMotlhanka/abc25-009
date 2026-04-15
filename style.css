@@ -143,44 +143,4 @@ header {
 .in-foot {
   font-size: 14px;
 }
-   /* Hero Section */
-.hero {
-  width: 100%;
-  height: 100vh; /* Full screen height */
-  position: relative;
-  overflow: hidden;
-}
-
-/* Banner container */
-.banner {
-  width: 100%;
-  height: 100%;
-}
-
-/* Banner image */
-.banner-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Makes image fill screen without distortion */
-}
-
-/* Text on top of banner */
-.hero h2,
-.hero p {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-
-/* Position heading */
-.hero h2 {
-  top: 40%;
-  font-size: 40px;
-}
-
-/* Position paragraph */
-.hero p {
-  top: 50%;
-  font-size: 20px;
-}
+  
