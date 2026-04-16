@@ -58,6 +58,7 @@ header {
   color: #f8d7da;
   font-size: 28px;
   font-weight: bold;
+  align-content: left;
 }
 
 /* Navigation Bar */
@@ -149,10 +150,4 @@ header {
   height: 30;      /* Full screen height */
   object-fit: cover;  /* Fill screen without stretching */
   display: block;
-}/* logo styling */
-.logo a {
-  color: #282626;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
