@@ -97,7 +97,7 @@ header {
 
 /* Heading */
 .contact-us {
-  text-align: right;
+  text-align: center;
   margin-bottom: 15px;
   color: #4b2e2e;
   font-size: 28px;
@@ -106,14 +106,14 @@ header {
 /* Paragraphs */
 .contact p {
   margin-bottom: 15px;
-  text-align: right;
+  text-align: center;
 }
 
 /* Lists */
 .contact ul {
   list-style: none;
   margin-bottom: 15px;
-  text-align: right;
+  text-align: center;
 }
 
 .contact ul li {
@@ -150,3 +150,5 @@ header {
   object-fit: cover;  /* Fill screen without stretching */
   display: block;
 }
+
+
