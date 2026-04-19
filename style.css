@@ -188,6 +188,13 @@ h3 {
   color: #5e8cd5;
   text-decoration: underline;
 }
+body.contact{
+  background-image: url('images/logo/logo.png');
+  background-size: 80px;
+  background-position: left top;
+ 
+}
+
 
     /*  FEEDBACK SECTION */
 
