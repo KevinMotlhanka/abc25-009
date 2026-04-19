@@ -126,14 +126,6 @@ p {
   color: #647dd1;
 }
 
-body.about{
-  background-image: url('images/banner/banner2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
 .about p {
   font-size: 1.1rem;
   color: #666;
