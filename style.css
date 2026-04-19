@@ -448,7 +448,7 @@ footer {
 }
 /* Target the logo inside the banner */
 .banner .logo {
-  width: 120px;        /* Set a fixed width */
+  width: 40px;        /* Set a fixed width */
   height: auto;        /* Maintain aspect ratio */
   max-width: 100%;     /* Prevent overflow on small screens */
 }
