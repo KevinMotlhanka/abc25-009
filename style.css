@@ -449,7 +449,7 @@ footer {
 
 /* Inside a banner specifically */
 .banner .logo {
-  width: 100px;
+  width: 50px;
   height: auto;
   max-width: 100%;
 }
