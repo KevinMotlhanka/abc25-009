@@ -456,7 +456,7 @@ footer {
 }
 /* Container to control logo placement in the banner */
 .banner-logo {
-    width: 80px;         
+    width: 40px;         
     height: auto;
     margin-right: 15px;  
     flex-shrink: 0;      
