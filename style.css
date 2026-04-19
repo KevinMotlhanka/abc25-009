@@ -460,3 +460,12 @@ footer {
     align-items: center; 
     justify-content: flex-start;
 }
+.banner-logo {
+    /* Set the size */
+    width: 30px;        /* Try smaller values like 40px or 50px if needed */
+    max-width: 100%;    /* Ensures it doesn't overflow its container */
+    height: auto;       /* Maintains the aspect ratio so it doesn't stretch */
+    
+    /* Optional: Improves the quality of the image scaling */
+    image-rendering: -webkit-optimize-contrast; 
+}
