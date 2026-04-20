@@ -177,7 +177,7 @@ h3 {
 
 .contact li {
   padding: 0.8rem;
-  background-color: #df88fa;
+  background-color: white;
   margin-bottom: 0.8rem;
   border-left: 4px solid #5951a3;
   border-radius: 4px;
@@ -185,7 +185,7 @@ h3 {
 }
 
 .contact li:hover {
-  background-color: #8be3c6;
+  background-color: #8bbbe3;
   transform: translateX(10px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
