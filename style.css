@@ -34,7 +34,28 @@ header {
   font-weight: bold;
   transition: color 0.3s ease;
 }
+/* Import a stylish font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
+/* Style the Logo to be circular */
+.logo-container img {
+    width: 100px;          /* Adjust size as needed */
+    height: 100px;         /* Must match width for a perfect circle */
+    border-radius: 50%;    /* This creates the circle shape */
+    object-fit: cover;     /* Ensures the image doesn't stretch */
+    border: 2px solid #860ce4; /* Optional: adds a royal gold border */
+}
+
+/* Style the Brand Name */
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;     /* Makes it stand out */
+    font-weight: 700;
+    letter-spacing: 1px;   /* Adds a touch of luxury spacing */
+    color: #7c368e;        /* Keeps it white against your purple gradient */
+    line-height: 1.2;
+    text-transform: capitalize;
+}
 .logo a:hover {
   color: #628ad3;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
