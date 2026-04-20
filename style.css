@@ -295,7 +295,7 @@ button:active {
 }
 
 .product-card {
-  flex: 0 1 calc(25% - 1.5rem);
+  flex: 0 1 calc(25% - 1.5rem); 
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
