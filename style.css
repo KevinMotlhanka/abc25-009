@@ -26,6 +26,11 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
 }
+nav ul li a {
+    padding-left: 10px; 
+    padding-right: 10px; 
+    margin-right: 5px;  
+}
 /* Style the Brand Name */
 .brand-name {
     font-family: 'Playfair Display', serif;
