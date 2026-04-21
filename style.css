@@ -192,17 +192,14 @@ section {
   }
 }
 
-/* H1 Creepster font */
-h1 {
-  font-family: 'Creepster', cursive;
-}
-
+/* H2 Creepster font */
 h2 {
   color: #7782e5;
   margin-bottom: 1.5rem;
   font-size: 2rem;
   border-bottom: 3px solid #5e6cc6;
   padding-bottom: 0.5rem;
+   font-family: 'Creepster', cursive;
 }
 
 p {
