@@ -194,11 +194,11 @@ section {
 
 /* H1 Creepster font */
 h3 {
-  font-family: 'berkshire swash', cursive;
+  font-family: 'berkshire swash', algerian , cursive;
 }
 
 h2 {
-  font-family: 'berkshire swash', cursive;
+  font-family: 'berkshire swash', algerian , cursive;
   color: #7782e5;
   margin-bottom: 1.5rem;
   font-size: 2rem;
