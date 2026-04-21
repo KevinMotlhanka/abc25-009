@@ -57,7 +57,7 @@ a img[src="images/logo/logo.png"] {
 }
 
 /* Import a stylish font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Creepster&display=swap');
 
 .logo-container img {
   width: 100px;
@@ -190,6 +190,11 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* H1 Creepster font */
+h1 {
+  font-family: 'Creepster', cursive;
 }
 
 h2 {
