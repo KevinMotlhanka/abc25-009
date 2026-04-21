@@ -5,10 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lim's Royal Boutique - Contact Us</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-page {
+      position: relative;
+      min-height: calc(100vh - 160px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .contact-page video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .contact-page::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+
+    .contact {
+      position: relative;
+      z-index: 2;
+      background: white;
+      border-radius: 12px;
+      padding: 2.5rem;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- HEADER (outside video container, always at top) -->
   <header class="banner">
     <a href="index.html"><img src="images/logo/logo.png"></a>
     <nav class="navbar">
@@ -22,36 +61,36 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT (middle, grows to fill space) -->
   <main>
-    <div class="video-container">
+    <div class="contact-page">
+
       <video autoplay muted loop playsinline>
         <source src="images/videos/platforms.mp4" type="video/mp4">
       </video>
+
+      <section class="contact">
+        <h2 class="contact-us">Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have questions about our products, need help with an order, or just want to share feedback.</p>
+
+        <ul>
+          <li>Email: <a href="mailto:lim@limsroyalboutique.com">lim@limsroyalboutique.com</a></li>
+          <li>Phone: <a href="tel:+26775771365">+267 75771365</a></li>
+        </ul>
+
+        <p>You can also follow us on our social media channels:</p>
+
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+
+        <p>We look forward to hearing from you!</p>
+      </section>
+
     </div>
-
-    <section class="contact">
-      <h2 class="contact-us">Contact Us</h2>
-      <p>We'd love to hear from you! Whether you have questions about our products, need help with an order, or just want to share feedback.</p>
-
-      <ul>
-        <li>Email: <a href="mailto:lim@limsroyalboutique.com">lim@limsroyalboutique.com</a></li>
-        <li>Phone: <a href="tel:+26775771365">+267 75771365</a></li>
-      </ul>
-
-      <p>You can also follow us on our social media channels:</p>
-
-      <ul>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-      </ul>
-
-      <p>We look forward to hearing from you!</p>
-    </section>
   </main>
 
-  <!-- FOOTER (outside everything, always at bottom) -->
   <footer class="foot">
     <p class="in-foot">&copy; 2026 Lim's Royal Boutique. All rights reserved.</p>
   </footer>
