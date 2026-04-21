@@ -26,16 +26,7 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
 
-  body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;   
-}
-
-main {
-  flex: 1;  
-
-}
+  
 }
 nav ul li a {
     padding-left: 10px; 
@@ -545,3 +536,16 @@ footer {
   height: auto;
   max-width: 100%;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;   /* body fills the full viewport */
+}
+
+header { /* sits naturally at the top */ }
+
+main {
+  flex: 1;   /* ← this makes the content grow and fill all remaining space */
+}
+
+footer { /* pushed to the bottom automatically */ }
