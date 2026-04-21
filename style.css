@@ -28,7 +28,7 @@ header {
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
-  position: sticky;   /* stays at top when scrolling */
+  position: sticky;
   top: 0;
   z-index: 999;
 }
@@ -121,7 +121,7 @@ main {
 .video-container {
   position: relative;
   width: 100%;
-  height: calc(100vh - 100px); /* viewport minus header height */
+  height: calc(100vh - 100px);
   overflow: hidden;
 }
 
@@ -229,46 +229,6 @@ h3 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: bold;
-}
-
-/*  CONTACT SECTION */
-
-.contact {
-  max-width: 700px;
-  margin: 3rem auto;
-}
-
-.contact ul {
-  list-style: none;
-  margin: 1.5rem 0;
-  padding-left: 0;
-}
-
-.contact li {
-  padding: 0.8rem;
-  background-color: white;
-  margin-bottom: 0.8rem;
-  border-left: 4px solid #5951a3;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.contact li:hover {
-  background-color: #8bbbe3;
-  transform: translateX(10px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact a {
-  color: #5990e3;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.contact a:hover {
-  color: #5e8cd5;
-  text-decoration: underline;
 }
 
 /*  FEEDBACK SECTION */
@@ -438,7 +398,6 @@ footer {
   text-align: center;
   padding: 2rem;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
-  /* removed margin-top: 3rem — flex pushes it to bottom automatically */
 }
 
 .in-foot {
@@ -534,4 +493,81 @@ footer {
   font-size: 1.3rem;
   text-shadow: 1px 1px 8px rgba(0,0,0,0.9);
   margin: 0;
+}
+
+/* ── CONTACT PAGE ── */
+.contact-page {
+  position: relative;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contact-page video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.contact-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.contact-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.contact-text h2 {
+  color: white;
+  font-size: 2.8rem;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+}
+
+.contact-text p {
+  color: white;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.9);
+  margin-bottom: 1rem;
+}
+
+.contact-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.contact-text ul li {
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.9);
+}
+
+.contact-text ul li a {
+  color: #b8d0ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.contact-text ul li a:hover {
+  color: white;
+  text-decoration: underline;
 }
