@@ -25,6 +25,17 @@ header {
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
+
+  body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;   
+}
+
+main {
+  flex: 1;  
+
+}
 }
 nav ul li a {
     padding-left: 10px; 
