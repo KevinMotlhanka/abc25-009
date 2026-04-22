@@ -19,8 +19,7 @@ body {
 
 /*  HEADER & NAVIGATION  */
 
-header {
-  background: linear-gradient(135deg, #7467ea 0%, #253855 100%);
+header { 
   color: white;
   padding: 1.5rem 2rem;
   display: flex;
