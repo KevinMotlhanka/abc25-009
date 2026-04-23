@@ -11,6 +11,13 @@
   <!-- HEADER -->
   <header>
     <a href="index.html"><img src="images/logo/logo.png"></a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -37,8 +44,17 @@
 
   <!-- FOOTER -->
   <footer class="foot">
-    <p>&copy; 2026 Lim's Royal Boutique. All rights reserved.</p>
+    <p class="in-foot">&copy; 2026 Lim's Royal Boutique. All rights reserved.</p>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.querySelector('.navbar');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navbar.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
