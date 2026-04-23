@@ -1,75 +1,68 @@
 <!DOCTYPE html>
- 
 <html lang="en">
- 
 <head>
- 
   <meta charset="UTF-8">
- 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <title>Lim's Royal Boutique- About Us</title>
- 
+  <title>Lim's Royal Boutique - About Us</title>
   <link rel="stylesheet" href="style.css">
- 
 </head>
- 
 <body class="about">
- 
-  <header>
-     <a href="index.html"><img src="images/logo/logo.png"></a>
- 
-    <h1><div class="logo"><a href="index.html"></a></div></h1>
- 
+
+  <header class="banner">
+    <a href="index.html"><img src="images/logo/logo.png"></a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <nav class="navbar">
- 
       <ul>
- 
         <li><a href="index.html">Home</a></li>
- 
         <li><a href="shop.html">Shop</a></li>
- 
         <li><a href="about.html">About Us</a></li>
- 
         <li><a href="feedback.html">Feedback</a></li>
- 
         <li><a href="contact.html">Contact Us</a></li>
- 
       </ul>
- 
     </nav>
- 
   </header>
- 
+
   <section class="about">
     <h2 class="about-us">About Lim's Royal Boutique</h2>
-  <div class="about-subsection">
-    <h3>Who We Are</h3>
-    <p>Welcome to Lim's Royal Boutique, your ultimate destination for stylish, affordable, and high-quality fashion. Founded with a passion for bringing elegance and sophistication to everyday wear, we believe that everyone deserves to feel confident and beautiful in what they wear. Our carefully curated collection features a diverse range of clothing, accessories, and footwear that cater to all tastes, body types, and occasions—from casual everyday essentials to statement pieces for special events.</p>
-  </div>
-  <div class="about-subsection">
-    <h3>Our Commitment</h3>
-    <p>At Lim's Royal Boutique, we are committed to offering exceptional quality at prices that won't break the bank. We work directly with trusted designers and suppliers to bring you the latest fashion trends while maintaining affordability. Whether you're looking for a chic blazer, elegant dresses, trendy accessories, or comfortable everyday wear, our boutique is your one-stop shop for all your fashion needs.</p>
-  </div>
-  <div class="about-subsection">
-    <h3>Our Mission</h3>
-    <p>Our mission is simple: to empower our customers through fashion. We believe that style is a form of self-expression, and we're here to help you discover pieces that make you feel like royalty. With a dedicated team passionate about customer service, we're always ready to assist you in finding the perfect outfit or answering any questions you may have.</p>
-  </div>
-  <div class="about-subsection closing">
-    <p>Thank you for choosing Lim's Royal Boutique. We look forward to being part of your fashion journey!</p>
-  </div>
 
-</section>
-</section>
- 
+    <div class="about-subsection">
+      <h3>Who We Are</h3>
+      <p>Welcome to Lim's Royal Boutique, your ultimate destination for stylish, affordable, and high-quality fashion. Founded with a passion for bringing elegance and sophistication to everyday wear, we believe that everyone deserves to feel confident and beautiful in what they wear. Our carefully curated collection features a diverse range of clothing, accessories, and footwear that cater to all tastes, body types, and occasions—from casual everyday essentials to statement pieces for special events.</p>
+    </div>
+
+    <div class="about-subsection">
+      <h3>Our Commitment</h3>
+      <p>At Lim's Royal Boutique, we are committed to offering exceptional quality at prices that won't break the bank. We work directly with trusted designers and suppliers to bring you the latest fashion trends while maintaining affordability. Whether you're looking for a chic blazer, elegant dresses, trendy accessories, or comfortable everyday wear, our boutique is your one-stop shop for all your fashion needs.</p>
+    </div>
+
+    <div class="about-subsection">
+      <h3>Our Mission</h3>
+      <p>Our mission is simple: to empower our customers through fashion. We believe that style is a form of self-expression, and we're here to help you discover pieces that make you feel like royalty. With a dedicated team passionate about customer service, we're always ready to assist you in finding the perfect outfit or answering any questions you may have.</p>
+    </div>
+
+    <div class="about-subsection closing">
+      <p>Thank you for choosing Lim's Royal Boutique. We look forward to being part of your fashion journey!</p>
+    </div>
   </section>
- 
+
   <footer class="foot">
- 
     <p class="in-foot">&copy; 2026 Lim's Royal Boutique. All rights reserved.</p>
- 
   </footer>
- 
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.querySelector('.navbar');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navbar.classList.toggle('open');
+    });
+  </script>
+
 </body>
- 
 </html>
