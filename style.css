@@ -443,7 +443,7 @@ button:active {
 /*  FOOTER — reduced size  */
 
 footer {
-  background: linear-gradient(135deg, #5654cc 0%, #5c44b4 100%);
+  background: linear-gradient(135deg, #5654cc 0%, #dad6ea 100%);
   color: white;
   text-align: center;
   padding: 0.8rem 2rem;
