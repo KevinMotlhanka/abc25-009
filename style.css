@@ -447,7 +447,7 @@ footer {
   color: white;
   text-align: center;
   padding: 0.8rem 2rem;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -2px 4px whitesmoke;
   text-decoration-color: whitesmoke;
 }
 
