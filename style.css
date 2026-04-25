@@ -669,23 +669,23 @@ footer .in-foot {
 /* Individual icon link */
 .social-container a {
   background-color: #ffffff;
-  width: 56px;
-  height: 56px;
+  width: 76px;
+  height: 76px;
   padding: 0;
   border-radius: 50%;
   box-sizing: border-box;
-  flex: 0;
+  flex: 0 0 76px;
   display: grid;
   place-items: center;
   position: relative;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  transition: background-color 200ms ease, transform 200ms ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: background-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
   text-decoration: none;
 }
 
 .social-container a svg {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   display: block;
   transition: fill 200ms ease;
 }
