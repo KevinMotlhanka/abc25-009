@@ -77,8 +77,8 @@ a img[src="images/logo/logo.png"] {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 22px;
+  width: 36px;
+  height: 28px;
   background: transparent;
   border: 2px solid rgba(255,255,255,0.5);
   border-radius: 6px;
@@ -127,15 +127,16 @@ a img[src="images/logo/logo.png"] {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 4px;
   transition: all 0.3s ease;
   position: relative;
 }
 
+/* FIXED: text stays white and visible on hover */
 .navbar a:hover {
-  background-color: #57aee0;
-  color: #559fdf;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -147,7 +148,7 @@ a img[src="images/logo/logo.png"] {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #638ad9;
+  background-color: #ffffff;
   transition: width 0.3s ease;
 }
 
@@ -440,17 +441,20 @@ button:active {
   transform: scale(0.98);
 }
 
-/*  FOOTER — reduced size  */
+/*  FOOTER — white text, reduced size  */
 
 footer {
-  background: linear-gradient(135deg, #5654cc 0%, #dad6ea 100%);
+  background: linear-gradient(135deg, #5654cc 0%, #5c44b4 100%);
   color: white;
   text-align: center;
   padding: 0.8rem 2rem;
-  box-shadow: 0 -2px 4px whitesmoke;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.in-foot {
+/* FIXED: footer text is now explicitly white */
+footer p,
+footer .in-foot {
+  color: #ffffff !important;
   margin: 0;
   font-size: 0.8rem;
 }
@@ -462,7 +466,6 @@ footer {
     flex: 0 1 calc(33.333% - 1.5rem);
   }
 
-  /* Show hamburger, hide full nav on tablets & phones */
   .hamburger {
     display: flex;
   }
@@ -476,7 +479,7 @@ footer {
   .navbar {
     display: none;
     width: 100%;
-    padding: 0.5rem 0 0.5rem;
+    padding: 0.5rem 0;
   }
 
   .navbar.open {
@@ -498,10 +501,12 @@ footer {
     padding: 0.75rem 1.5rem;
     border-radius: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
   }
 
   .navbar a:hover {
-    background-color: rgba(87, 174, 224, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
     transform: none;
     box-shadow: none;
   }
@@ -567,14 +572,19 @@ footer {
   margin: 0;
 }
 
-/* ── CONTACT PAGE ── */
+/* ══════════════════════════════════════
+   CONTACT PAGE
+══════════════════════════════════════ */
+
 .contact-page {
   position: relative;
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 80px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 60px 20px 40px;
+  overflow: hidden;
 }
 
 .contact-page video {
@@ -591,7 +601,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -642,4 +652,105 @@ footer {
 .contact-text ul li a:hover {
   color: white;
   text-decoration: underline;
+}
+
+/* ══════════════════════════════════════
+   SOCIAL MEDIA ICONS (Contact Page)
+══════════════════════════════════════ */
+
+.social-container {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual icon link */
+.social-container a {
+  background-color: #ffffff;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  flex: 0;
+  display: grid;
+  place-items: center;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  transition: background-color 200ms ease, transform 200ms ease;
+  text-decoration: none;
+}
+
+.social-container a svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: fill 200ms ease;
+}
+
+/* Accent colours per platform */
+.social-container a[data-social="Facebook"]  { --accent-color: #1877F2; }
+.social-container a[data-social="Twitter"]   { --accent-color: #1DA1F2; }
+.social-container a[data-social="Instagram"] { --accent-color: #E1306C; }
+.social-container a[data-social="Email"]     { --accent-color: #7467ea; }
+.social-container a[data-social="Phone"]     { --accent-color: #25D366; }
+
+/* Hover: fill the circle with the brand colour */
+.social-container a:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.social-container a:hover svg {
+  fill: #ffffff;
+}
+
+/* Tooltip label above icon */
+.social-container a::before {
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  top: -42px;
+  left: 50%;
+  transform: translateX(-50%) rotate(10deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68);
+}
+
+.social-container a:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+/* Tooltip arrow */
+.social-container a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--accent-color);
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(25deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68);
+}
+
+.social-container a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) rotate(0deg);
 }
