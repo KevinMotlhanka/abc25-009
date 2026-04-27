@@ -755,9 +755,7 @@ footer .in-foot {
   transform: translateX(-50%) rotate(0deg);
 }
 
-/* ══════════════════════════════════════
-   FEEDBACK PAGE — full-screen background
-══════════════════════════════════════ */
+/* FEEDBACK PAGE — full-screen background */
 
 .feedback-page {
   min-height: calc(100vh - 80px);
