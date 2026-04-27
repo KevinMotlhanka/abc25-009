@@ -754,3 +754,88 @@ footer .in-foot {
   opacity: 1;
   transform: translateX(-50%) rotate(0deg);
 }
+
+/* ══════════════════════════════════════
+   FEEDBACK PAGE — full-screen background
+══════════════════════════════════════ */
+
+.feedback-page {
+  min-height: calc(100vh - 80px);
+  background-image: url('images/background-img/feedback.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  position: relative;
+}
+
+/* Dark overlay so text stays readable */
+.feedback-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* Glassmorphism card — transparent with frosted blur */
+.feedback-page .feedback {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.12);  /* semi-transparent */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Heading and paragraph text white on the background */
+.feedback-page .feed-back {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.feedback-page p {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.feedback-page label {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Inputs — semi-transparent with white text */
+.feedback-page input[type="text"],
+.feedback-page input[type="email"],
+.feedback-page textarea {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.feedback-page input[type="text"]::placeholder,
+.feedback-page input[type="email"]::placeholder,
+.feedback-page textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.feedback-page input[type="text"]:focus,
+.feedback-page input[type="email"]:focus,
+.feedback-page textarea:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  outline: none;
+}
