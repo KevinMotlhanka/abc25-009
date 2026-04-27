@@ -925,9 +925,8 @@ footer .in-foot {
   text-decoration: underline;
 }
 
-/* ══════════════════════════════════════
-   ABOUT PAGE — full-screen background
-══════════════════════════════════════ */
+/*
+   ABOUT PAGE — full-screen background image */
 
 .about-page {
   min-height: calc(100vh - 80px);
