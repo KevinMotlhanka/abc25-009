@@ -47,13 +47,14 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
-/* Logo */
+/* Logo — responsive sizing */
 a img[src="images/logo/logo.png"] {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Creepster&display=swap');
@@ -408,6 +409,8 @@ footer .in-foot {
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .product-card { flex: 0 1 calc(33.333% - 1.5rem); }
+  /* Logo shrinks on tablets */
+  a img[src="images/logo/logo.png"] { width: 80px; height: 80px; }
 
   .hamburger { display: flex; }
 
@@ -454,6 +457,8 @@ footer .in-foot {
   h2 { font-size: 1.5rem; }
   section { margin: 1.5rem; padding: 1.5rem; }
   header { padding: 1rem; }
+  /* Logo shrinks on large phones */
+  a img[src="images/logo/logo.png"] { width: 65px; height: 65px; }
 }
 
 @media (max-width: 480px) {
@@ -461,6 +466,14 @@ footer .in-foot {
   h2 { font-size: 1.3rem; }
   section { margin: 1rem; padding: 1rem; }
   .logo a { font-size: 1.3rem; }
+  /* Logo smallest on small phones */
+  a img[src="images/logo/logo.png"] { width: 50px; height: 50px; }
+}
+
+
+/* Large screens — logo slightly bigger */
+@media (min-width: 1440px) {
+  a img[src="images/logo/logo.png"] { width: 120px; height: 120px; }
 }
 
 /* UTILITY */
