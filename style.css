@@ -22,7 +22,7 @@ body {
 header {
   background: linear-gradient(135deg, #7467ea 0%, #253855 100%);
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.4rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,8 +49,8 @@ nav ul li a {
 
 /* Logo — responsive sizing */
 a img[src="images/logo/logo.png"] {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -410,7 +410,7 @@ footer .in-foot {
 @media (max-width: 1024px) {
   .product-card { flex: 0 1 calc(33.333% - 1.5rem); }
   /* Logo shrinks on tablets */
-  a img[src="images/logo/logo.png"] { width: 80px; height: 80px; }
+  a img[src="images/logo/logo.png"] { width: 55px; height: 55px; }
 
   .hamburger { display: flex; }
 
@@ -456,9 +456,9 @@ footer .in-foot {
   .product-card { flex: 0 1 calc(50% - 1rem); }
   h2 { font-size: 1.5rem; }
   section { margin: 1.5rem; padding: 1.5rem; }
-  header { padding: 1rem; }
+  header { padding: 0.3rem 1rem; }
   /* Logo shrinks on large phones */
-  a img[src="images/logo/logo.png"] { width: 65px; height: 65px; }
+  a img[src="images/logo/logo.png"] { width: 48px; height: 48px; }
 }
 
 @media (max-width: 480px) {
@@ -467,13 +467,13 @@ footer .in-foot {
   section { margin: 1rem; padding: 1rem; }
   .logo a { font-size: 1.3rem; }
   /* Logo smallest on small phones */
-  a img[src="images/logo/logo.png"] { width: 50px; height: 50px; }
+  a img[src="images/logo/logo.png"] { width: 40px; height: 40px; }
 }
 
 
 /* Large screens — logo slightly bigger */
 @media (min-width: 1440px) {
-  a img[src="images/logo/logo.png"] { width: 120px; height: 120px; }
+  a img[src="images/logo/logo.png"] { width: 70px; height: 70px; }
 }
 
 /* UTILITY */
